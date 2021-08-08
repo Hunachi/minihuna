@@ -9,7 +9,7 @@ import (
 var rootCmd = &cobra.Command{
 	Use:   "minihuna",
 	Short: "minihuna is otasukeman for hunachi.",
-	Long: `TODO: describe detail of 'minihuna'.`,
+	Long:  `TODO: describe detail of 'minihuna'.`,
 	Run: func(cmd *cobra.Command, args []string) {
 		// TODO:
 	},
@@ -25,11 +25,7 @@ func Execute() {
 	}
 }
 
-func AddToRootCmd(cmd *cobra.Command) {
-	rootCmd.AddCommand(cmd)
-}
-
-func init(){
+func init() {
 	// どんなコマンドあるのかを表示してくれる．
 	// rootCmd.PersistentFlags().StringP("version", "v", "", "show version")
 }
