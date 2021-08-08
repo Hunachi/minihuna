@@ -1,0 +1,3 @@
+# minihuna
+
+ふなちのためのCLI Application🐝❣️
