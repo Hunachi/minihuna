@@ -23,7 +23,7 @@ var saveCmd = &cobra.Command{
 }
 
 func saveSetting() {
-	if err := writeByres("settings.txt", "localhost 10.10.10.10 ~/.ssh/id_rsa2\n"); err != nil {
+	if err := writeByres("settings.txt", "nyan!\n"); err != nil {
 		fmt.Println(os.Stderr, err)
 		os.Exit(1)
 	}
@@ -38,7 +38,7 @@ func writeByres(filename string, setting string) error {
 
 	path := current.HomeDir + "/.minihuna/"
 	if _, err := os.Stat(path); os.IsNotExist(err) {
-		err = os.Mkdir(path , 0755)
+		err = os.Mkdir(path, 0755)
 	}
 	if err != nil {
 		return err
