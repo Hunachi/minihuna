@@ -2,6 +2,8 @@
 
 ふなちのためのCLI Application🐝❣️
 
+現在育成中🌱❣️
+
 ## Features
 
 #### 1. バックアップ機能
